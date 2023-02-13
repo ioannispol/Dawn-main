@@ -1,18 +1,13 @@
 {{!< default}}
     
-    {{!content}}
-    
-    {{!-- Path: blog.hbs --}}
-    {{!< default}}
-    
-    {{#each posts}}
-      {{> post}}
-    {{/each}}
-    
-    {{!-- Path: post.hbs
-    {{#with this}}
-      <div class="post">
-        <h2>{{title}}</h2>
-        <p>{{description}}</p>
-      </div>
-    {{/with}} --}}
+{{!content}}
+
+<main class="site-main">
+    <div class="post-feed gh-feed gh-canvas">
+        {{#foreach posts}}
+            {{> "loop"}}
+        {{/foreach}}
+    </div>
+    {{pagination}}
+
+</main>
