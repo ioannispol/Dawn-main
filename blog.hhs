@@ -9,10 +9,10 @@
       {{> post}}
     {{/each}}
     
-    {{!-- Path: post.hbs --}}
+    {{!-- Path: post.hbs
     {{#with this}}
       <div class="post">
         <h2>{{title}}</h2>
         <p>{{description}}</p>
       </div>
-    {{/with}}
+    {{/with}} --}}
